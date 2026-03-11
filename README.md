@@ -126,15 +126,11 @@ AI-Crop-Disease-Predictor/
 │   ├── crop_classifier.pth
 │   └── disease_classifier/
 │
-├── scripts/
-│   ├── preprocess.py
-│   ├── train_crop.py
-│   └── train_disease.py
 │
 ├── README.md
 └── requirements.txt
 ```
-
+Note:This is project structure not repository structure
 ---
 
 ## 📈 Results
