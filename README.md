@@ -70,13 +70,14 @@ Per class , 500 images wreused 250 real+ 250 augmented(some classes used 500 rea
    ▼      ▼      ▼      ▼      ▼      ▼      ▼ ... ▼
  D1     D2     D3     D4     D5     D6     D7 ... D10
 ```
+At both Stages ,EfficientnetB0 was used to keep things simple.
 
 **Explanation:**
 
 * **Stage 1 – Crop Classifier:** Identifies which crop the image belongs to (~90% accuracy).
 * **Stage 2 – Disease Classifier:** For each crop, a **specific classifier predicts one of 10 diseases** (~70–80% accuracy).
 
-At both Stages ,EfficientnetB0 was used to keep things simple.
+
 ---
 
 ## 🎨 Data Augmentation
