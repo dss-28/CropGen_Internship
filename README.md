@@ -37,14 +37,15 @@ The dataset contains images from:
 
 **Example CSV format (sample):**
 
-| Crop     | Disease        | Image Filename          |
-| -------- | -------------- | ----------------------- |
-| Tomato   | Late Blight    | tomato_lb_001.jpg       |
-| Cotton   | Bacterial Spot | cotton_bs_010.jpg       |
-| Cucumber | Beetle         | cucumber_beetle_001.jpg |
-| Tobacco  | Mosaic Virus   | tobacco_mv_003.jpg      |
+| Crop     | Disease        | Image Filename                   |
+| -------- | -------------- | ---------------------------------|
+| Tomato   | Late Blight    | tomato_late_blight_39.jpg        |
+| Cotton   | Anthracanose   | cotton_anthracanose_25.png       |
+| Cucumber | Beetle         | cucumber_beetle_21.jpg           |
+| Tobacco  | Bacterial Wilt | tobacco_bacterial_wilt_39.jpg    |
 
 ---
+Per class , 500 images wreused 250 real+ 250 augmented(some classes used 500 realimages basedo availabilty)
 
 ## 🛠 Model Architecture
 
@@ -75,6 +76,7 @@ The dataset contains images from:
 * **Stage 1 – Crop Classifier:** Identifies which crop the image belongs to (~90% accuracy).
 * **Stage 2 – Disease Classifier:** For each crop, a **specific classifier predicts one of 10 diseases** (~70–80% accuracy).
 
+At both Stages ,EfficientnetB0 was used to keep things simple.
 ---
 
 ## 🎨 Data Augmentation
